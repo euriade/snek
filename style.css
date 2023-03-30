@@ -1,0 +1,131 @@
+canvas {
+  border: 1px solid black;
+}
+
+.author-container {
+  display: inline-block;
+  overflow: hidden;
+}
+
+#author-img {
+  width: 150px;
+  height: 150px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-out;
+}
+
+#author-img:hover {
+  filter: grayscale(0%);
+}
+
+.nav-link:hover {
+  color: #8cbb41 !important;
+}
+
+/* Styles pour le header */
+
+h1 {
+  font-size: 48px;
+  margin-top: 0;
+}
+
+/* Styles pour les sections */
+section {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+/* Styles pour le footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Styles pour l'image du logo */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  position: relative;
+  height: 400px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/snake_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  padding: 2rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  margin: 10px;
+}
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.canvas-container > div {
+  text-align: center;
+}
+
+#startButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.rs-icon {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.rs-icon:hover {
+  opacity: 1;
+}
+
+.btn {
+  background-color: #8cbb41 !important;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #bbe23a !important;
+}
